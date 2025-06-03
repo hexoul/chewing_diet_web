@@ -1,10 +1,10 @@
 # Chewing diet
 
-## Getting Started
+## Getting started
 
 1. Run
-  ```
-  pnpm dev
-  ```
+    ```
+    pnpm dev
+    ```
 
 2. Open [http://localhost:3000](http://localhost:3000)
