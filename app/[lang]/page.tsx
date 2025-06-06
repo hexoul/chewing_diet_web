@@ -14,7 +14,7 @@ export default async function IndexPage(props: {
   const dict = await getDictionary(lang);
 
   return (
-    <div className="bg-orange-50 p-4 flex flex-col items-center">
+    <div className="p-4 flex flex-col items-center">
       <div className="flex flex-row items-center gap-x-4 m-4">
         <Image
           src="/spoon.png"
@@ -28,34 +28,49 @@ export default async function IndexPage(props: {
       </div>
       <div className="text-xl text-gray-700 mb-6">{dict.shortDescription}</div>
 
-      <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-        <Card className="bg-orange-500 text-white p-6 max-w-sm">
-          <CardContent className="flex flex-col items-center">
-            <h2 className="text-lg font-semibold mb-2">Chewing Diet</h2>
-            <div className="w-24 h-24 rounded-full border-8 border-white flex items-center justify-center text-2xl font-bold">
+      <div className="flex flex-col md:w-xl items-center gap-6 mb-8">
+        <Card className="border-orange-200 p-6">
+          <CardContent className="flex flex-row items-center gap-x-3">
+            <div className="size-12 rounded-full border-4 border-gray-300 flex items-center justify-center font-bold text-purple-400">
               20
             </div>
-            <p className="mt-2">CHEWS</p>
-            <p className="text-lg mt-4">Meal duration</p>
-            <p className="text-2xl font-bold">15:00</p>
-            <Button className="mt-4 bg-green-700 hover:bg-green-800 text-white w-full">
-              STOP
-            </Button>
+            +
+            <div className="size-12 rounded-full border-4 border-gray-300 flex items-center justify-center font-bold text-orange-400">
+              15
+            </div>
+            =
+            <Image
+              src="/result.png"
+              alt="Expected result"
+              width={100}
+              height={100}
+            />
           </CardContent>
         </Card>
 
         <div className="text-gray-800">
           <p className="mb-4">
-            Chewing Diet is an app that helps improve fast eating habits:
-            Chewing each bite at least 20 times and eating for at least 15
-            minutes can prevent overeating and weight gain.
+            Designed to help you overcome fast eating habits. By encouraging you
+            to chew each bite at least{" "}
+            <b className="text-purple-400 text-lg">20 </b>
+            times and extend meals to a minimum of
+            <b className="text-orange-400 text-lg"> 15</b> minutes, it helps
+            prevent overeating and supports weight loss.
           </p>
-          <h3 className="text-lg font-semibold mb-2">Key Features</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Chew timer: prompts 20+ chews per bite</li>
-            <li>Meal duration tracking: encourages 15+ minute meals</li>
-            <li>Wearable integration: vibration alerts on smartwatches</li>
-            <li>Meal diary: record meals with photos</li>
+          <h3 className="text-lg font-bold mt-6 mb-1">Key Features</h3>
+          <ul className="text-sm space-y-2">
+            <li>
+              • ⏱️ <i>Chewing timer</i>
+            </li>
+            <li>
+              • ⏳ <i>Meal duration tracker</i>
+            </li>
+            <li>
+              • ⌚︎ <i>Wearable integration</i>
+            </li>
+            <li>
+              • 📝 <i>Meal diary</i>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,7 +96,7 @@ export default async function IndexPage(props: {
 
       <div className="text-center mt-8 mb-3">{dict.encourage}</div>
 
-      <div className="flex mb-8">
+      <div className="flex mb-44 ">
         <Link href="https://coff.ee/chewing.diet" target="_blank">
           <Image
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
