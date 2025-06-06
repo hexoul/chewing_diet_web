@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chewing Diet",
   description:
-    "Discover mindful eating – and let weight loss follow naturally.",
+    "Discover mindful eating - and let weight loss follow naturally.",
 };
 
 export async function generateStaticParams() {

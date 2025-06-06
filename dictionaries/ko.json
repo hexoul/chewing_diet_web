@@ -1,7 +1,5 @@
 {
-  "server-component": {
-    "welcome": "웰컴"
-  },
+  "title": "츄잉 다이어트",
   "counter": {
     "increment": "증가",
     "decrement": "감소"

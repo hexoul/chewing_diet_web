@@ -1,7 +1,5 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
-  },
+  "title": "Chewing Diet",
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"
