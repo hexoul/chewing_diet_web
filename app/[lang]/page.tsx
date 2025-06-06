@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
-import Link from "next/link";
 
 export default async function IndexPage(props: {
   params: Promise<{ lang: Locale }>;
@@ -17,14 +17,12 @@ export default async function IndexPage(props: {
     <div className="min-h-screen bg-orange-50 p-6 flex flex-col items-center">
       <div className="max-w-2xl w-full">
         <div className="flex items-center space-x-4 mb-6">
-          <div className="bg-orange-600 p-2 rounded-md">
-            <Image src="/spoon-icon.png" alt="Logo" width={32} height={32} />
+          <div className="rounded-md">
+            <Image src="/icon.png" alt="Logo" width={64} height={64} priority />
           </div>
           <h1 className="text-3xl font-bold text-gray-800">{dict.title}</h1>
         </div>
-        <p className="text-xl text-gray-700 mb-6">
-          Eat slowly, eat healthy, make it a habit
-        </p>
+        <p className="text-xl text-gray-700 mb-6">{dict.shortDescription}</p>
 
         <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
           <Card className="bg-orange-500 text-white p-6 w-full max-w-sm">
@@ -58,21 +56,18 @@ export default async function IndexPage(props: {
           </div>
         </div>
 
-        <div className="flex flex-row gap-4 items-center">
-          <Link
-            href="https://play.google.com/store/apps/details?id=hexoul.chewing.diet"
-            target="_blank"
-          >
+        <div className="flex flex-row gap-4 justify-center items-center">
+          <Link href={dict.playstore.url} target="_blank">
             <Image
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              src={dict.playstore.src}
               alt="Get it on Google Play"
               width={150}
               height={45}
             />
           </Link>
-          <Link href="https://apps.apple.com/app/id6444375180" target="_blank">
+          <Link href={dict.appstore.url} target="_blank">
             <Image
-              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              src={dict.appstore.src}
               alt="Download on the App Store"
               width={150}
               height={45}
@@ -80,7 +75,7 @@ export default async function IndexPage(props: {
           </Link>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
+        <div className="flex justify-center m-8">
           <Link href="https://coff.ee/chewing.diet" target="_blank">
             <Image
               src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
