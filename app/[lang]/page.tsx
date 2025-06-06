@@ -26,7 +26,7 @@ export default async function IndexPage(props: {
         />
         <h1 className="text-3xl font-bold text-gray-800">{dict.title}</h1>
       </div>
-      <div className="text-xl text-gray-700 mb-6">{dict.shortDescription}</div>
+      <div className="text-xl text-gray-700 mb-6">{`"${dict.shortDescription}"`}</div>
 
       <div className="flex flex-col md:w-xl items-center gap-6 mb-8">
         <Card className="border-orange-200 p-6">
@@ -50,26 +50,25 @@ export default async function IndexPage(props: {
 
         <div className="text-gray-800">
           <p className="mb-4">
-            Designed to help you overcome fast eating habits. By encouraging you
-            to chew each bite at least{" "}
-            <b className="text-purple-400 text-lg">20 </b>
-            times and extend meals to a minimum of
-            <b className="text-orange-400 text-lg"> 15</b> minutes, it helps
-            prevent overeating and supports weight loss.
+            {dict.longDescription1}
+            <b className="text-purple-400 text-lg"> 20 </b>
+            {dict.longDescription2}
+            <b className="text-orange-400 text-lg"> 15 </b>
+            {dict.longDescription3}
           </p>
-          <h3 className="text-lg font-bold mt-6 mb-1">Key Features</h3>
+          <h3 className="text-lg font-bold mt-6 mb-1">{dict.keyFeatures}</h3>
           <ul className="text-sm space-y-2">
             <li>
-              • ⏱️ <i>Chewing timer</i>
+              • ⏱️ <i>{dict.feature1}</i>
             </li>
             <li>
-              • ⏳ <i>Meal duration tracker</i>
+              • ⏳ <i>{dict.feature2}</i>
             </li>
             <li>
-              • ⌚︎ <i>Wearable integration</i>
+              • ⌚︎ <i>{dict.feature3}</i>
             </li>
             <li>
-              • 📝 <i>Meal diary</i>
+              • 📝 <i>{dict.feature4}</i>
             </li>
           </ul>
         </div>

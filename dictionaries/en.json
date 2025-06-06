@@ -1,7 +1,14 @@
 {
   "title": "Chewing Diet",
   "shortDescription": "Slow down, eat mindfully, stay healthy!",
-  "longDescription": "",
+  "longDescription1": "Designed to help you overcome fast eating habits. By encouraging you to chew each bite at least",
+  "longDescription2": "times and extend meals to a minimum of",
+  "longDescription3": "minutes, it helps prevent overeating and supports weight loss.",
+  "keyFeatures": "Key Features",
+  "feature1": "Chewing timer",
+  "feature2": "Meal duration tracking",
+  "feature3": "Wearable integration",
+  "feature4": "Meal diary",
   "encourage": "Enjoyed the app? Help us keep going with your support!",
   "appstore": {
     "src": "/appstore_en.svg",

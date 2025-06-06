@@ -1,8 +1,15 @@
 {
   "title": "츄잉 다이어트",
-  "shortDescription": "Slow down, eat mindfully, stay healthy!",
-  "longDescription": "",
-  "encourage": "Enjoyed the app? Help us keep going with your support!",
+  "shortDescription": "천천히 먹으면서, 여유도 가지고, 건강해지세요!",
+  "longDescription1": "빨리 먹는 식습관을 고치는걸 돕기위해 디자인되었습니다. 한 입에 최소",
+  "longDescription2": "번 이상 씹고 식사 시간을 최소",
+  "longDescription3": "분 이상으로 늘리도록 유도하여 과식을 예방하고 체중 감량을 돕습니다.",
+  "keyFeatures": "주요 기능",
+  "feature1": "츄잉 타이머",
+  "feature2": "식사시간 추적",
+  "feature3": "웨어러블 연동",
+  "feature4": "식사 일기",
+  "encourage": "앱이 마음에 드셨나요? 여러분의 응원이 저희에게 큰 힘이 됩니다!",
   "appstore": {
     "src": "/appstore_ko.svg",
     "url": "https://apps.apple.com/kr/app/id6444375180"
