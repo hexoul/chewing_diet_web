@@ -25,7 +25,7 @@ export default async function IndexPage(props: {
         />
         <h1 className="text-3xl font-bold text-gray-800">{dict.title}</h1>
       </div>
-      <div className="text-xl text-gray-700 mb-6">{`"${dict.shortDescription}"`}</div>
+      <div className="text-lg text-gray-700 mb-6">{`"${dict.shortDescription}"`}</div>
 
       <div className="flex flex-col md:w-xl items-center gap-6 mb-8">
         <Card className="border-orange-200 p-6">
@@ -55,7 +55,7 @@ export default async function IndexPage(props: {
             <b className="text-orange-400 text-lg"> 15 </b>
             {dict.longDescription3}
           </p>
-          <h3 className="text-lg font-bold mt-6 mb-1">{dict.keyFeatures}</h3>
+          <h2 className="text-lg font-bold mt-6 mb-1">{dict.keyFeatures}</h2>
           <ul className="text-sm space-y-2">
             <li>
               • ⏱️ <i>{dict.feature1}</i>
@@ -64,7 +64,7 @@ export default async function IndexPage(props: {
               • ⏳ <i>{dict.feature2}</i>
             </li>
             <li>
-              • ⌚︎ <i>{dict.feature3}</i>
+              • ⌚️ <i>{dict.feature3}</i>
             </li>
             <li>
               • 📝 <i>{dict.feature4}</i>
