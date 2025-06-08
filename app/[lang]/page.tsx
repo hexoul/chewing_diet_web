@@ -23,7 +23,7 @@ export default async function IndexPage(props: {
           priority
           alt="Logo"
         />
-        <h1 className="text-3xl font-bold text-gray-800">{dict.title}</h1>
+        <h1 className="text-2xl font-bold text-gray-800">{dict.title}</h1>
       </div>
       <div className="text-lg text-gray-700 mb-6">{`"${dict.shortDescription}"`}</div>
 
