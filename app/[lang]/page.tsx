@@ -25,7 +25,7 @@ export default async function IndexPage(props: {
         />
         <h1 className="text-2xl font-bold text-gray-800">{dict.title}</h1>
       </div>
-      <div className="text-lg text-gray-700 mb-6">{`"${dict.shortDescription}"`}</div>
+      <div className="text-lg text-gray-700 text-center mb-6">{`"${dict.shortDescription}"`}</div>
 
       <div className="flex flex-col md:w-xl items-center gap-6 mb-8">
         <Card className="border-orange-200 p-6">

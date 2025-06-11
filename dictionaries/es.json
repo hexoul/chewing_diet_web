@@ -1,22 +1,22 @@
 {
   "title": "Dieta de Masticación",
-  "shortDescription": "Slow down, eat mindfully, stay healthy!",
-  "longDescription1": "Designed to help you overcome fast eating habits. By encouraging you to chew each bite at least",
-  "longDescription2": "times and extend meals to a minimum of",
-  "longDescription3": "minutes, it helps prevent overeating and supports weight loss.",
-  "keyFeatures": "Key Features",
-  "feature1": "Chewing timer",
-  "feature2": "Meal duration tracking",
-  "feature3": "Wearable integration",
-  "feature4": "Meal diary",
-  "encourage": "Enjoyed the app?\nHelp us keep going with your support!",
+  "shortDescription": "¡Reduce la velocidad, come conscientemente y mantente saludable!",
+  "longDescription1": "Diseñado para ayudarte a superar los hábitos alimenticios rápidos. Al animarte a masticar cada bocado al menos",
+  "longDescription2": "veces y extender las comidas a un mínimo de",
+  "longDescription3": "minutos, ayuda a prevenir la sobrealimentación y favorece la pérdida de peso.",
+  "keyFeatures": "Características clave",
+  "feature1": "Temporizador de masticación",
+  "feature2": "Seguimiento de duración de la comida",
+  "feature3": "Integración con wearables",
+  "feature4": "Diario de comidas",
+  "encourage": "¿Te gustó la aplicación?\nTu apoyo y tus palabras de aliento son de gran ayuda para el desarrollo futuro.",
   "appstore": {
     "src": "/appstore_es.svg",
     "url": "https://apps.apple.com/es/app/id6444375180"
   },
   "playstore": {
-    "src": "/playstore_en.png",
-    "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=en"
+    "src": "/playstore_es.png",
+    "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=es"
   },
   "counter": {
     "increment": "Increment",
