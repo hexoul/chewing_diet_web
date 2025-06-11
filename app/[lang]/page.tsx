@@ -20,8 +20,8 @@ export default async function IndexPage(props: {
           className="rounded-xl"
           width={48}
           height={48}
-          priority
           alt="Logo"
+          priority
         />
         <h1 className="text-2xl font-bold text-gray-800">{dict.title}</h1>
       </div>
@@ -40,9 +40,10 @@ export default async function IndexPage(props: {
             =
             <Image
               src="/result.png"
-              alt="Expected result"
               width={100}
               height={100}
+              alt="Expected result"
+              priority
             />
           </CardContent>
         </Card>
@@ -92,7 +93,7 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="text-center mt-8 mb-3">{dict.encourage}</div>
+      <div className="text-center mt-8 mb-3 whitespace-pre-line">{dict.encourage}</div>
 
       <div className="flex mb-44 ">
         <Link href="https://coff.ee/chewing.diet" target="_blank">

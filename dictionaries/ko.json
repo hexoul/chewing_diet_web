@@ -9,7 +9,7 @@
   "feature2": "식사시간 추적",
   "feature3": "웨어러블 연동",
   "feature4": "식사 일기",
-  "encourage": "앱이 마음에 드셨나요? 여러분의 응원이 저희에게 큰 힘이 됩니다!",
+  "encourage": "앱이 마음에 드셨나요?\n여러분의 응원이 저희에게 큰 힘이 됩니다!",
   "appstore": {
     "src": "/appstore_ko.svg",
     "url": "https://apps.apple.com/kr/app/id6444375180"
