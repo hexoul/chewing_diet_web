@@ -6,18 +6,18 @@ import { type getDictionary } from "../../../get-dictionary";
 export default function Counter({
   dictionary,
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>["counter"];
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["appstore"];
 }) {
   const [count, setCount] = useState(0);
   return (
     <p>
       This component is rendered on client:
       <button onClick={() => setCount((n) => n - 1)}>
-        {dictionary.decrement}
+        {dictionary.src}
       </button>
       {count}
       <button onClick={() => setCount((n) => n + 1)}>
-        {dictionary.increment}
+        {dictionary.src}
       </button>
     </p>
   );

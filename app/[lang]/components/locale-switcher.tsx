@@ -6,6 +6,7 @@ import { i18n, type Locale } from "../../../i18n-config";
 
 export default function LocaleSwitcher() {
   const pathname = usePathname();
+
   const redirectedPathname = (locale: Locale) => {
     if (!pathname) return "/";
     const segments = pathname.split("/");
@@ -15,15 +16,12 @@ export default function LocaleSwitcher() {
 
   return (
     <div>
-      <p>Locale switcher:</p>
       <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
-              <Link href={redirectedPathname(locale)}>{locale}</Link>
-            </li>
-          );
-        })}
+        {i18n.locales.map((locale) => (
+          <li key={locale}>
+            <Link href={redirectedPathname(locale)}>{locale}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
