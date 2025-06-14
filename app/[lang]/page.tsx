@@ -105,7 +105,7 @@ export default async function IndexPage(props: {
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>
 
-      <div className="mt-24 mb-4">Contact</div>
+      <div className="text-sm text-gray-500 mt-24 mb-4">contact: crosien+diet@gmail.com</div>
     </div>
   );
 }
