@@ -1,25 +1,25 @@
 {
-  "title": "츄잉 다이어트",
-  "shortDescription": "천천히 먹으면서, 여유도 가지고, 건강해지세요!",
-  "longDescription1": "빨리 먹는 식습관을 고치는걸 돕기위해 디자인되었습니다. 한 입에 최소",
-  "longDescription2": "번 이상 씹고 식사 시간을 최소",
-  "longDescription3": "분 이상으로 늘리도록 유도하여 과식을 예방하고 체중 감량을 돕습니다.",
-  "keyFeatures": "주요 기능",
-  "feature1": "츄잉 타이머",
-  "feature2": "식사시간 추적",
-  "feature3": "웨어러블 연동",
-  "feature4": "식사 일기",
-  "encourage": "앱은 마음에 드셨나요?\n여러분의 응원과 후원은 앞으로의 개발에 큰 힘이 됩니다.",
   "appstore": {
     "src": "/appstore_ko.svg",
     "url": "https://apps.apple.com/kr/app/id6444375180"
   },
+  "encourage": "앱은 마음에 드셨나요?\n여러분의 응원과 후원은 앞으로의 개발에 큰 힘이 됩니다.",
+  "feature1": "츄잉 타이머",
+  "feature2": "식사시간 추적",
+  "feature3": "웨어러블 연동",
+  "feature4": "식사 일기",
+  "howItWorks": {
+    "title": "How it works",
+    "content": "Leptin, a hormone that suppresses appetite, is released at least 15 minutes after the start of a meal. Chewing food slowly enhances its secretion. Consequently, finishing a meal in under 15 minutes may prevent leptin release, resulting in reduced satiety and potentially leading to overeating.\n\nPeople who consume meals in less than 5 minutes have a significantly higher risk of:- Obesity (3 times higher)\n- Diabetes (2 times higher)\n- Hyperlipidemia (1.8 times higher)\n- Fatty liver (23 times higher)\n\nChewing food thoroughly, ideally 20 to 30 times per bite, aids in breaking it down into smaller pieces and ensures even distribution of digestive enzymes from saliva. Rapid ingestion of inadequately chewed food can strain the stomach."
+  },
+  "keyFeatures": "주요 기능",
+  "longDescription1": "빨리 먹는 식습관을 고치는걸 돕기위해 디자인되었습니다. 한 입에 최소",
+  "longDescription2": "번 이상 씹고 식사 시간을 최소",
+  "longDescription3": "분 이상으로 늘리도록 유도하여 과식을 예방하고 체중 감량을 돕습니다.",
   "playstore": {
     "src": "/playstore_ko.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=ko"
   },
-  "counter": {
-    "increment": "증가",
-    "decrement": "감소"
-  }
+  "shortDescription": "천천히 먹으면서, 여유도 가지고, 건강해지세요!",
+  "title": "츄잉 다이어트"
 }

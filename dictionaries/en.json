@@ -1,25 +1,25 @@
 {
-  "title": "Chewing Diet",
-  "shortDescription": "Slow down, eat mindfully, stay healthy!",
-  "longDescription1": "Designed to help you overcome fast eating habits. By encouraging you to chew each bite at least",
-  "longDescription2": "times and extend meals to a minimum of",
-  "longDescription3": "minutes, it helps prevent overeating and supports weight loss.",
-  "keyFeatures": "Key Features",
-  "feature1": "Chewing timer",
-  "feature2": "Meal duration tracking",
-  "feature3": "Wearable integration",
-  "feature4": "Meal diary",
-  "encourage": "Did you enjoy the app?\nYour support and patronage will be a great help in our future development.",
   "appstore": {
     "src": "/appstore_en.svg",
     "url": "https://apps.apple.com/us/app/id6444375180"
   },
+  "encourage": "Did you enjoy the app?\nYour support and patronage will be a great help in our future development.",
+  "feature1": "Chewing timer",
+  "feature2": "Meal duration tracking",
+  "feature3": "Wearable integration",
+  "feature4": "Meal diary",
+  "howItWorks": {
+    "title": "How it works",
+    "content": "Leptin, a hormone that suppresses appetite, is released at least 15 minutes after the start of a meal. Chewing food slowly enhances its secretion. Consequently, finishing a meal in under 15 minutes may prevent leptin release, resulting in reduced satiety and potentially leading to overeating.\n\nPeople who consume meals in less than 5 minutes have a significantly higher risk of:- Obesity (3 times higher)\n- Diabetes (2 times higher)\n- Hyperlipidemia (1.8 times higher)\n- Fatty liver (23 times higher)\n\nChewing food thoroughly, ideally 20 to 30 times per bite, aids in breaking it down into smaller pieces and ensures even distribution of digestive enzymes from saliva. Rapid ingestion of inadequately chewed food can strain the stomach."
+  },
+  "keyFeatures": "Key Features",
+  "longDescription1": "Designed to help you overcome fast eating habits. By encouraging you to chew each bite at least",
+  "longDescription2": "times and extend meals to a minimum of",
+  "longDescription3": "minutes, it helps prevent overeating and supports weight loss.",
   "playstore": {
     "src": "/playstore_en.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=en"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
-  }
+  "shortDescription": "Slow down, eat mindfully, stay healthy!",
+  "title": "Chewing Diet"
 }

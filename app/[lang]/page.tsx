@@ -93,9 +93,11 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="text-center mt-8 mb-3 whitespace-pre-line">{dict.encourage}</div>
+      <div className="text-center mt-8 mb-3 whitespace-pre-line">
+        {dict.encourage}
+      </div>
 
-      <div className="flex mb-44 ">
+      <div className="flex mb-10">
         <Link href="https://coff.ee/chewing.diet" target="_blank">
           <Image
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
@@ -106,6 +108,13 @@ export default async function IndexPage(props: {
           />
         </Link>
       </div>
+
+      <div className="flex flex-col w-full md:w-xl items-start">
+        <h2 className="text-lg font-bold mb-1">{dict.howItWorks.title}</h2>
+        <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
+      </div>
+
+      <div className="mt-24 mb-4">Contact</div>
     </div>
   );
 }

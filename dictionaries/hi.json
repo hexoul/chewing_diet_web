@@ -1,25 +1,25 @@
 {
-  "title": "आहार चबाना",
-  "shortDescription": "धीरे खाएं, ध्यानपूर्वक खाएं, स्वस्थ रहें!",
-  "longDescription1": "तेजी से खाने की आदतों को छोड़ने में आपकी मदद करने के लिए डिज़ाइन किया गया। यह प्रत्येक निवाले को कम से कम",
-  "longDescription2": "बार चबाने और भोजन को कम से कम",
-  "longDescription3": "मिनट तक बढ़ाने के लिए प्रेरित करता है, जिससे अधिक खाने से बचाव होता है और वजन घटाने में मदद मिलती है।",
-  "keyFeatures": "मुख्य विशेषताएं",
-  "feature1": "चबाने का टाइमर",
-  "feature2": "भोजन की अवधि का ट्रैकिंग",
-  "feature3": "वियरेबल एकीकरण",
-  "feature4": "भोजन डायरी",
-  "encourage": "क्या आपको ऐप पसंद आया?\nआपका समर्थन और प्रोत्साहन हमारे आगे के विकास के लिए बहुत महत्वपूर्ण है।",
   "appstore": {
     "src": "/appstore_hi.svg",
     "url": "https://apps.apple.com/in/app/id6444375180"
   },
+  "encourage": "क्या आपको ऐप पसंद आया?\nआपका समर्थन और प्रोत्साहन हमारे आगे के विकास के लिए बहुत महत्वपूर्ण है।",
+  "feature1": "चबाने का टाइमर",
+  "feature2": "भोजन की अवधि का ट्रैकिंग",
+  "feature3": "वियरेबल एकीकरण",
+  "feature4": "भोजन डायरी",
+  "howItWorks": {
+    "title": "How it works",
+    "content": "Leptin, a hormone that suppresses appetite, is released at least 15 minutes after the start of a meal. Chewing food slowly enhances its secretion. Consequently, finishing a meal in under 15 minutes may prevent leptin release, resulting in reduced satiety and potentially leading to overeating.\n\nPeople who consume meals in less than 5 minutes have a significantly higher risk of:- Obesity (3 times higher)\n- Diabetes (2 times higher)\n- Hyperlipidemia (1.8 times higher)\n- Fatty liver (23 times higher)\n\nChewing food thoroughly, ideally 20 to 30 times per bite, aids in breaking it down into smaller pieces and ensures even distribution of digestive enzymes from saliva. Rapid ingestion of inadequately chewed food can strain the stomach."
+  },
+  "keyFeatures": "मुख्य विशेषताएं",
+  "longDescription1": "तेजी से खाने की आदतों को छोड़ने में आपकी मदद करने के लिए डिज़ाइन किया गया। यह प्रत्येक निवाले को कम से कम",
+  "longDescription2": "बार चबाने और भोजन को कम से कम",
+  "longDescription3": "मिनट तक बढ़ाने के लिए प्रेरित करता है, जिससे अधिक खाने से बचाव होता है और वजन घटाने में मदद मिलती है।",
   "playstore": {
     "src": "/playstore_hi.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=hi"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
-  }
+  "shortDescription": "धीरे खाएं, ध्यानपूर्वक खाएं, स्वस्थ रहें!",
+  "title": "आहार चबाना"
 }

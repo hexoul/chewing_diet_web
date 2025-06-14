@@ -1,25 +1,25 @@
 {
-  "title": "もぐもぐダイエット",
-  "shortDescription": "ゆっくり食べて、意識して食べて、健康を保ちましょう！",
-  "longDescription1": "早食いの習慣を克服するために開発されました。一口ごとに少なくとも",
-  "longDescription2": "回噛むことを推奨し、食事を最低",
-  "longDescription3": "分に延長することで、食べ過ぎを防ぎ、減量を促進します。",
-  "keyFeatures": "主な特徴",
-  "feature1": "咀嚼タイマー",
-  "feature2": "食事時間の追跡",
-  "feature3": "ウェアラブル連携",
-  "feature4": "食事日記",
-  "encourage": "アプリはお気に入りましたか？\n皆さまの応援とご支援は今後の開発に大きな支えになります。",
   "appstore": {
     "src": "/appstore_ja.svg",
     "url": "https://apps.apple.com/jp/app/id6444375180"
   },
+  "encourage": "アプリはお気に入りましたか？\n皆さまの応援とご支援は今後の開発に大きな支えになります。",
+  "feature1": "咀嚼タイマー",
+  "feature2": "食事時間の追跡",
+  "feature3": "ウェアラブル連携",
+  "feature4": "食事日記",
+  "howItWorks": {
+    "title": "How it works",
+    "content": "Leptin, a hormone that suppresses appetite, is released at least 15 minutes after the start of a meal. Chewing food slowly enhances its secretion. Consequently, finishing a meal in under 15 minutes may prevent leptin release, resulting in reduced satiety and potentially leading to overeating.\n\nPeople who consume meals in less than 5 minutes have a significantly higher risk of:- Obesity (3 times higher)\n- Diabetes (2 times higher)\n- Hyperlipidemia (1.8 times higher)\n- Fatty liver (23 times higher)\n\nChewing food thoroughly, ideally 20 to 30 times per bite, aids in breaking it down into smaller pieces and ensures even distribution of digestive enzymes from saliva. Rapid ingestion of inadequately chewed food can strain the stomach."
+  },
+  "keyFeatures": "主な特徴",
+  "longDescription1": "早食いの習慣を克服するために開発されました。一口ごとに少なくとも",
+  "longDescription2": "回噛むことを推奨し、食事を最低",
+  "longDescription3": "分に延長することで、食べ過ぎを防ぎ、減量を促進します。",
   "playstore": {
     "src": "/playstore_ja.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=ja"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
-  }
+  "shortDescription": "ゆっくり食べて、意識して食べて、健康を保ちましょう！",
+  "title": "もぐもぐダイエット"
 }
