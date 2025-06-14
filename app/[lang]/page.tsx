@@ -50,26 +50,17 @@ export default async function IndexPage(props: {
 
         <div className="text-gray-800">
           <p className="mb-4">
-            {dict.longDescription1}
+            {dict.longDescription[0]}
             <b className="text-purple-400 text-lg"> 20 </b>
-            {dict.longDescription2}
+            {dict.longDescription[1]}
             <b className="text-orange-400 text-lg"> 15 </b>
-            {dict.longDescription3}
+            {dict.longDescription[2]}
           </p>
           <h2 className="text-lg font-bold mt-6 mb-1">{dict.keyFeatures}</h2>
           <ul className="text-sm space-y-2">
-            <li>
-              • ⏱️ <i>{dict.feature1}</i>
-            </li>
-            <li>
-              • ⏳ <i>{dict.feature2}</i>
-            </li>
-            <li>
-              • ⌚️ <i>{dict.feature3}</i>
-            </li>
-            <li>
-              • 📝 <i>{dict.feature4}</i>
-            </li>
+            {dict.features.map((v, idx) => (
+              <li key={`feature${idx}`}>{v}</li>
+            ))}
           </ul>
         </div>
       </div>
