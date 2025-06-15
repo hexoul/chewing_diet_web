@@ -105,7 +105,31 @@ export default async function IndexPage(props: {
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>
 
-      <div className="text-sm text-gray-500 mt-24 mb-4">contact: crosien+diet@gmail.com</div>
+      <div className="flex flex-col items-center w-full mt-24 py-2 gap-y-1 text-sm text-gray-500 bg-black/5">
+        <div>
+          {"© 2025 "}
+          <Link href="https://hexoul.github.io/about/" target="blank">
+            <u>Seunggon Kim</u>
+          </Link>
+          . All rights reserved.
+        </div>
+        <div>
+          <Link
+            href="https://github.com/hexoul/privacy-policy/wiki/Terms-&-Conditions-for-Chewing-Diet"
+            target="blank"
+          >
+            Terms of Service
+          </Link>
+          {" | "}
+          <Link
+            href="https://github.com/hexoul/privacy-policy/wiki/Privacy-Policy-for-Chewing-Diet"
+            target="blank"
+          >
+            Privacy Policy
+          </Link>
+        </div>
+        contact: crosien+diet@gmail.com
+      </div>
     </div>
   );
 }
