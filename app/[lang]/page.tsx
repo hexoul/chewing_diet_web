@@ -5,6 +5,39 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
 
+const REFERENCES = [
+  {
+    title:
+      "Eating slowly led to decreases in energy intake within meals in healthy women",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18589027/",
+  },
+  {
+    title:
+      "The joint impact on being overweight of self reported behaviours of eating quickly and eating until full: cross sectional survey",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18940848/",
+  },
+  {
+    title:
+      "Association between eating rate and obesity: a systematic review and meta-analysis",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26100137/",
+  },
+  {
+    title:
+      "Faster self-reported speed of eating is related to higher body mass index in a nationwide survey of middle-aged women",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21802566/",
+  },
+  {
+    title:
+      "Eating fast leads to obesity: findings based on self-administered questionnaires among middle-aged Japanese men and women",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16710080/",
+  },
+  {
+    title:
+      "Rate of eating and body weight in patients with type 2 diabetes or hyperlipidaemia",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12235929/",
+  },
+];
+
 export default async function IndexPage(props: {
   params: Promise<{ lang: Locale }>;
 }) {
@@ -100,9 +133,22 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="flex flex-col w-full md:w-xl items-start">
+      <div className="flex flex-col w-full md:w-xl items-start my-8">
         <h2 className="text-lg font-bold mb-1">{dict.howItWorks.title}</h2>
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
+      </div>
+
+      <div className="flex flex-col w-full md:w-xl items-start">
+        <h2 className="text-lg font-bold mb-1">References</h2>
+        <ol className="list-decimal pl-4">
+          {REFERENCES.map((ref, idx) => (
+            <li key={`ref-${idx}`}>
+              <Link href={ref.url} target="blank">
+                {ref.title}
+              </Link>
+            </li>
+          ))}
+        </ol>
       </div>
 
       <div className="flex flex-col items-center w-full mt-24 py-2 gap-y-1 text-sm text-gray-500 bg-black/5">
