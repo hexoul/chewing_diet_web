@@ -56,7 +56,7 @@ export default async function IndexPage(props: {
           alt="Logo"
           priority
         />
-        <h1 className="text-2xl font-bold text-gray-800">{dict.title}</h1>
+        <h1 className="text-gray-800">{dict.title}</h1>
       </div>
       <div className="text-lg text-gray-700 text-center mb-6">{`"${dict.shortDescription}"`}</div>
 
@@ -89,7 +89,7 @@ export default async function IndexPage(props: {
             <b className="text-orange-400 text-lg"> 15 </b>
             {dict.longDescription[2]}
           </p>
-          <h2 className="text-lg font-bold mt-6 mb-1">{dict.keyFeatures}</h2>
+          <h2 className="mt-6">{dict.keyFeatures}</h2>
           <ul className="text-sm space-y-2">
             {dict.features.map((v, idx) => (
               <li key={`feature${idx}`}>{v}</li>
@@ -134,15 +134,15 @@ export default async function IndexPage(props: {
       </div>
 
       <div className="flex flex-col w-full md:w-xl items-start my-8">
-        <h2 className="text-lg font-bold mb-1">{dict.howItWorks.title}</h2>
+        <h2>{dict.howItWorks.title}</h2>
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>
 
       <div className="flex flex-col w-full md:w-xl items-start">
-        <h2 className="text-lg font-bold mb-1">References</h2>
+        <h2>References</h2>
         <ol className="list-decimal pl-4">
           {REFERENCES.map((ref, idx) => (
-            <li key={`ref-${idx}`}>
+            <li key={`ref${idx}`} className="mb-2">
               <Link href={ref.url} target="blank">
                 {ref.title}
               </Link>
@@ -155,7 +155,7 @@ export default async function IndexPage(props: {
         <div>
           {"© 2025 "}
           <Link href="https://hexoul.github.io/about/" target="blank">
-            <u>Seunggon Kim</u>
+            Seunggon Kim
           </Link>
           . All rights reserved.
         </div>
