@@ -102,7 +102,7 @@ export default async function IndexPage(props: {
         <Link href={dict.playstore.url} target="_blank">
           <Image
             src={dict.playstore.src}
-            width={150}
+            width={160}
             height={45}
             alt="Get it on Google Play"
           />
@@ -174,7 +174,7 @@ export default async function IndexPage(props: {
             Privacy Policy
           </Link>
         </div>
-        contact: crosien+diet@gmail.com
+        <p className="my-4">contact: crosien+diet@gmail.com</p>
       </div>
     </div>
   );
