@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
+import LocaleSwitcher from "./components/locale-switcher";
 
 const REFERENCES = [
   {
@@ -47,6 +48,9 @@ export default async function IndexPage(props: {
 
   return (
     <div className="p-4 flex flex-col items-center">
+      <div className="self-end">
+        <LocaleSwitcher />
+      </div>
       <div className="flex flex-row items-center gap-x-4 m-4">
         <Image
           src="/spoon.png"
@@ -105,6 +109,7 @@ export default async function IndexPage(props: {
             width={160}
             height={45}
             alt="Get it on Google Play"
+            style={{ width: "auto" }}
           />
         </Link>
         <Link href={dict.appstore.url} target="_blank">
@@ -113,6 +118,7 @@ export default async function IndexPage(props: {
             width={150}
             height={45}
             alt="Download on the App Store"
+            style={{ width: "auto" }}
           />
         </Link>
       </div>
@@ -174,7 +180,7 @@ export default async function IndexPage(props: {
             Privacy Policy
           </Link>
         </div>
-        <p className="my-4">contact: crosien+diet@gmail.com</p>
+        <p className="mt-4 mb-8">contact: crosien+diet@gmail.com</p>
       </div>
     </div>
   );

@@ -1,10 +1,19 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+} from "@/components/ui/select";
+import { GlobeIcon } from "lucide-react";
+
 import { i18n, type Locale } from "../../../i18n-config";
 
 export default function LocaleSwitcher() {
+  const router = useRouter();
   const pathname = usePathname();
 
   const redirectedPathname = (locale: Locale) => {
@@ -15,14 +24,23 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <div>
-      <ul>
-        {i18n.locales.map((locale) => (
-          <li key={locale}>
-            <Link href={redirectedPathname(locale)}>{locale}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Select
+      onValueChange={(value) =>
+        router.replace(redirectedPathname(value as Locale))
+      }
+    >
+      <SelectTrigger>
+        <GlobeIcon />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          {i18n.locales.map((locale) => (
+            <SelectItem key={locale} value={locale}>
+              {locale}
+            </SelectItem>
+          ))}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
   );
 }
