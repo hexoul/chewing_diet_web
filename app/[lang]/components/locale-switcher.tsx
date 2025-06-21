@@ -12,6 +12,14 @@ import { GlobeIcon } from "lucide-react";
 
 import { i18n, type Locale } from "../../../i18n-config";
 
+const literal = {
+  en: "English",
+  es: "Español",
+  hi: "हिन्दी",
+  ja: "日本語",
+  ko: "한국어",
+};
+
 export default function LocaleSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
@@ -25,6 +33,7 @@ export default function LocaleSwitcher() {
 
   return (
     <Select
+      defaultValue={pathname.split("/")[1] as Locale}
       onValueChange={(value) =>
         router.replace(redirectedPathname(value as Locale))
       }
@@ -36,7 +45,7 @@ export default function LocaleSwitcher() {
         <SelectGroup>
           {i18n.locales.map((locale) => (
             <SelectItem key={locale} value={locale}>
-              {locale}
+              {literal[locale]}
             </SelectItem>
           ))}
         </SelectGroup>
