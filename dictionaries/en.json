@@ -24,6 +24,12 @@
     "src": "/playstore_en.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=en"
   },
+  "references": [
+    {
+      "title": "Leptin, appetite-suppressing hormone",
+      "url": "https://en.wikipedia.org/wiki/Leptin"
+    }
+  ],
   "shortDescription": "Slow down, eat mindfully, stay healthy!",
   "title": "Chewing Diet"
 }

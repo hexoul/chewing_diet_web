@@ -24,6 +24,12 @@
     "src": "/playstore_hi.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=hi"
   },
+  "references": [
+    {
+      "title": "लेप्टिन, भूख को दबाने वाला हार्मोन",
+      "url": "https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A5%87%E0%A4%AA%E0%A5%8D%E0%A4%9F%E0%A4%BF%E0%A4%A8"
+    }
+  ],
   "shortDescription": "धीरे खाएं, ध्यानपूर्वक खाएं, स्वस्थ रहें!",
   "title": "Chewing Diet"
 }

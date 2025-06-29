@@ -24,6 +24,16 @@
     "src": "/playstore_ja.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=ja"
   },
+  "references": [
+    {
+      "title": "咀嚼のハナシ",
+      "url": "https://www.natori.co.jp/joy/syokuiku/sosyaku1.html"
+    },
+    {
+      "title": "レプチン、食欲抑制ホルモン",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%97%E3%83%81%E3%83%B3"
+    }
+  ],
   "shortDescription": "ゆっくり食べて、意識して食べて、健康を保ちましょう！",
   "title": "もぐもぐダイエット"
 }

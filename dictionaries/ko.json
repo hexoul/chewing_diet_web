@@ -24,6 +24,16 @@
     "src": "/playstore_ko.png",
     "url": "https://play.google.com/store/apps/details?id=hexoul.chewing.diet&hl=ko"
   },
+  "references": [
+    {
+      "title": "한국인 90%, 15분 내 허겁지겁 식사… 비만·당뇨병 위험",
+      "url": "https://www.hankookilbo.com/News/Read/A2022081922390003353"
+    },
+    {
+      "title": "렙틴, 식욕억제호르몬",
+      "url": "https://ko.wikipedia.org/wiki/%EB%A0%99%ED%8B%B4"
+    }
+  ],
   "shortDescription": "천천히 먹으면서, 여유도 가지고, 건강해지세요!",
   "title": "츄잉 다이어트"
 }

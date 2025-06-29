@@ -147,8 +147,15 @@ export default async function IndexPage(props: {
       <div className="flex flex-col w-full md:w-xl items-start">
         <h2>References</h2>
         <ol className="list-decimal pl-4">
+          {dict.references.map((ref, idx) => (
+            <li key={`ref-localized${idx}`} className="mb-2">
+              <Link href={ref.url} target="blank">
+                {ref.title}
+              </Link>
+            </li>
+          ))}
           {REFERENCES.map((ref, idx) => (
-            <li key={`ref${idx}`} className="mb-2">
+            <li key={`ref-paper${idx}`} className="mb-2">
               <Link href={ref.url} target="blank">
                 {ref.title}
               </Link>
