@@ -102,14 +102,13 @@ export default async function IndexPage(props: {
         </div>
       </div>
 
-      <div className="flex flex-row gap-4 justify-center items-center">
+      <div className="flex flex-row gap-2 justify-center items-center">
         <Link href={dict.playstore.url} target="_blank">
           <Image
             src={dict.playstore.src}
-            width={160}
+            width={150}
             height={45}
             alt="Get it on Google Play"
-            style={{ width: "auto" }}
           />
         </Link>
         <Link href={dict.appstore.url} target="_blank">
@@ -167,7 +166,7 @@ export default async function IndexPage(props: {
       <div className="flex flex-col items-center w-full mt-24 py-2 gap-y-1 text-sm text-gray-500 bg-black/5">
         <div>
           {"© 2025 "}
-          <Link href="https://hexoul.github.io/about/" target="blank">
+          <Link href="https://www.linkedin.com/in/seunggon-kim/" target="blank">
             Seunggon Kim
           </Link>
           . All rights reserved.
