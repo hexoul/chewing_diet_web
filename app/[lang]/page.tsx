@@ -51,7 +51,7 @@ export default async function IndexPage(props: {
       <div className="self-end">
         <LocaleSwitcher />
       </div>
-      <div className="flex flex-row items-center gap-x-4 m-4">
+      <div className="flex flex-row items-center gap-x-4">
         <Image
           src="/spoon.png"
           className="rounded-xl"
@@ -60,49 +60,16 @@ export default async function IndexPage(props: {
           alt="Logo"
           priority
         />
-        <h1 className="text-gray-800">{dict.title}</h1>
-      </div>
-      <div className="text-lg text-gray-700 text-center mb-6">{`"${dict.shortDescription}"`}</div>
-
-      <div className="flex flex-col md:w-xl items-center gap-y-6 mb-10">
-        <Card className="border-orange-200 items-center py-4 w-full">
-          <CardContent className="flex flex-row items-center gap-x-3 font-bold text-xl">
-            <div className="size-16 rounded-full border-4 border-purple-100 flex items-center justify-center text-purple-400">
-              20
-            </div>
-            +
-            <div className="size-16 rounded-full border-4 border-orange-100 flex items-center justify-center text-orange-400">
-              15
-            </div>
-            =
-            <Image
-              src="/result.png"
-              width={100}
-              height={100}
-              alt="Expected result"
-              priority
-            />
-          </CardContent>
-        </Card>
-
-        <div className="text-gray-800">
-          <p className="mb-4">
-            {dict.longDescription[0]}
-            <b className="text-purple-400 text-lg"> 20 </b>
-            {dict.longDescription[1]}
-            <b className="text-orange-400 text-lg"> 15 </b>
-            {dict.longDescription[2]}
-          </p>
-          <h2 className="mt-10">{dict.keyFeatures}</h2>
-          <ul className="text-base space-y-2">
-            {dict.features.map((v, idx) => (
-              <li key={`feature${idx}`}>{v}</li>
-            ))}
-          </ul>
-        </div>
+        <h1>{dict.title}</h1>
       </div>
 
-      <div className="flex flex-row gap-2 justify-center items-center">
+      <div className="text-2xl text-center my-8 md:text-3xl md:my-10 md:font-bold">
+        Just 20 chews and 15+ minutes can change the way you eat.
+      </div>
+
+      <div className="italic text-gray-500 text-center mb-6 md:text-sm md:mb-5">{`"${dict.shortDescription}"`}</div>
+
+      <div className="flex flex-row justify-center items-center gap-x-2 md:gap-x-4">
         <Link href={dict.playstore.url} target="_blank">
           <Image
             src={dict.playstore.src}
@@ -122,7 +89,46 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="text-center text-sm mt-12 mb-6 whitespace-pre-line">
+      <div className="flex flex-col md:w-2xl items-center gap-y-4 mt-8">
+        <div>
+          {dict.longDescription[0]}
+          <b className="text-purple-400 text-lg"> 20 </b>
+          {dict.longDescription[1]}
+          <b className="text-orange-400 text-lg"> 15 </b>
+          {dict.longDescription[2]}
+        </div>
+
+        <Card className="border-orange-200 items-center w-full">
+          <CardContent className="flex flex-row items-center gap-x-3 font-bold text-xl">
+            <div className="size-16 rounded-full border-4 border-purple-100 flex items-center justify-center text-purple-400">
+              20
+            </div>
+            +
+            <div className="size-16 rounded-full border-4 border-orange-100 flex items-center justify-center text-orange-400">
+              15
+            </div>
+            =
+            <Image
+              src="/result.png"
+              width={100}
+              height={100}
+              alt="Expected result"
+              priority
+            />
+          </CardContent>
+        </Card>
+
+        <div className="w-full justify-start items-start">
+          <h2>🛠️ {dict.keyFeatures}</h2>
+          <ul className="text-base space-y-2">
+            {dict.features.map((v, idx) => (
+              <li key={`feature${idx}`}>{v}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="text-center text-sm mt-14 mb-4 whitespace-pre-line">
         {dict.encourage}
       </div>
 
@@ -138,12 +144,12 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="flex flex-col w-full md:w-xl items-start mb-14">
+      <div className="flex flex-col w-full md:w-2xl items-start mb-14">
         <h2>{dict.howItWorks.title}</h2>
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>
 
-      <div className="flex flex-col w-full md:w-xl items-start">
+      <div className="flex flex-col w-full md:w-2xl items-start">
         <h2>References</h2>
         <ol className="list-decimal pl-4">
           {dict.references.map((ref, idx) => (

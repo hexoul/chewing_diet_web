@@ -127,10 +127,10 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply text-2xl font-bold;
+    @apply text-lg;
   }
   h2 {
-    @apply text-xl font-semibold mb-2;
+    @apply text-lg font-semibold mb-2;
   }
   a {
     @apply text-gray-600 underline underline-offset-4;
