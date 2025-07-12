@@ -7,18 +7,18 @@
   "features": [
     "• ⏱️ Chewing timer",
     "• ⏳ Meal duration tracking",
-    "• ⌚️ Wearable integration",
+    "• ⌚️ Smart watch integration",
     "• 📝 Meal diary"
   ],
   "howItWorks": {
     "title": "How it works",
-    "content": "Leptin, a hormone that suppresses appetite, is released at least 15 minutes after the start of a meal. Chewing food slowly enhances its secretion. Consequently, finishing a meal in under 15 minutes may prevent leptin release, resulting in reduced satiety and potentially leading to overeating.\n\nPeople who consume meals in less than 5 minutes have a significantly higher risk of:\n- Obesity (3 times higher)\n- Diabetes (2 times higher)\n- Hyperlipidemia (1.8 times higher)\n- Fatty liver (23 times higher)\n\nChewing food thoroughly, ideally 20 to 30 times per bite, aids in breaking it down into smaller pieces and ensures even distribution of digestive enzymes from saliva. Rapid ingestion of inadequately chewed food can strain the stomach."
+    "content": "Leptin, a hormone that suppresses appetite, is released at least 15 minutes after the start of a meal. Chewing slowly enhances leptin secretion. Therefore, finishing a meal in under 15 minutes may limit leptin release, reducing feelings of fullness and increasing the risk of overeating.\n\nPeople who eat meals in less than 5 minutes have a significantly higher risk of:\n- Obesity (3 times higher)\n- Diabetes (2 times higher)\n- Hyperlipidemia (1.8 times higher)\n- Fatty liver (23 times higher)\n\nThorough chewing, ideally 20 to 30 times per bite, breaks food into smaller pieces and promotes even mixing with saliva, aiding digestion. Eating too quickly without proper chewing can strain the stomach."
   },
   "keyFeatures": "Key Features",
   "longDescription": [
-    "Designed to help you overcome fast eating habits. By encouraging you to chew each bite at least",
-    "times and extend meals to a minimum of",
-    "minutes, it helps prevent overeating and supports weight loss."
+    "Designed to help you overcome fast eating habits, this guide encourages chewing each bite at least",
+    "times and extending meals to a minimum of",
+    "minutes. This helps prevent overeating and supports weight loss."
   ],
   "playstore": {
     "src": "/playstore_en.svg",
