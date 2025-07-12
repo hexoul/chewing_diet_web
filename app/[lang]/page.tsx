@@ -64,14 +64,14 @@ export default async function IndexPage(props: {
       </div>
       <div className="text-lg text-gray-700 text-center mb-6">{`"${dict.shortDescription}"`}</div>
 
-      <div className="flex flex-col md:w-xl items-center gap-6 mb-8">
-        <Card className="border-orange-200 p-6">
-          <CardContent className="flex flex-row items-center gap-x-3">
-            <div className="size-12 rounded-full border-4 border-gray-300 flex items-center justify-center font-bold text-purple-400">
+      <div className="flex flex-col md:w-xl items-center gap-y-6 mb-10">
+        <Card className="border-orange-200 items-center py-4 w-full">
+          <CardContent className="flex flex-row items-center gap-x-3 font-bold text-xl">
+            <div className="size-16 rounded-full border-4 border-purple-100 flex items-center justify-center text-purple-400">
               20
             </div>
             +
-            <div className="size-12 rounded-full border-4 border-gray-300 flex items-center justify-center font-bold text-orange-400">
+            <div className="size-16 rounded-full border-4 border-orange-100 flex items-center justify-center text-orange-400">
               15
             </div>
             =
@@ -93,8 +93,8 @@ export default async function IndexPage(props: {
             <b className="text-orange-400 text-lg"> 15 </b>
             {dict.longDescription[2]}
           </p>
-          <h2 className="mt-6">{dict.keyFeatures}</h2>
-          <ul className="text-sm space-y-2">
+          <h2 className="mt-10">{dict.keyFeatures}</h2>
+          <ul className="text-base space-y-2">
             {dict.features.map((v, idx) => (
               <li key={`feature${idx}`}>{v}</li>
             ))}
@@ -123,11 +123,11 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="text-center mt-8 mb-3 whitespace-pre-line">
+      <div className="text-center text-sm mt-12 mb-6 whitespace-pre-line">
         {dict.encourage}
       </div>
 
-      <div className="flex mb-10">
+      <div className="flex mb-14">
         <Link href="https://coff.ee/chewing.diet" target="_blank">
           <Image
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
@@ -139,7 +139,7 @@ export default async function IndexPage(props: {
         </Link>
       </div>
 
-      <div className="flex flex-col w-full md:w-xl items-start my-8">
+      <div className="flex flex-col w-full md:w-xl items-start mb-14">
         <h2>{dict.howItWorks.title}</h2>
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>

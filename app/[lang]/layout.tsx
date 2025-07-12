@@ -31,7 +31,7 @@ export default async function Root(props: {
   return (
     <html lang={params.lang}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-orange-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-50`}
       >
         {props.children}
       </body>
