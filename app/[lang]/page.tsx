@@ -51,23 +51,10 @@ export default async function IndexPage(props: {
       <div className="self-end">
         <LocaleSwitcher />
       </div>
-      <div className="flex flex-row items-center gap-x-4">
-        <Image
-          src="/spoon.png"
-          className="rounded-xl"
-          width={48}
-          height={48}
-          alt="Logo"
-          priority
-        />
-        <h1>{dict.title}</h1>
-      </div>
 
-      <div className="text-2xl text-center my-8 md:text-3xl md:my-10 md:font-bold">
-        {dict.headline}
-      </div>
+      <h1 className="text-center mt-14 mb-4 whitespace-pre-line">{dict.headline}</h1>
 
-      <div className="italic text-gray-500 text-center mb-6 md:text-sm md:mb-5">{`"${dict.shortDescription}"`}</div>
+      <div className="italic text-gray-500 mb-8 md:text-sm">{`"${dict.shortDescription}"`}</div>
 
       <div className="flex flex-row justify-center items-center gap-x-2 md:gap-x-4">
         <Link href={dict.playstore.url} target="_blank">
