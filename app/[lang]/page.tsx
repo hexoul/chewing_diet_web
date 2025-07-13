@@ -53,10 +53,10 @@ export default async function IndexPage(props: {
       </div>
 
       <h1 className="text-center mt-14 mb-4 whitespace-pre-line">{dict.headline}</h1>
-
       <div className="italic text-gray-500 mb-8 md:text-sm">{`"${dict.shortDescription}"`}</div>
 
-      <div className="flex flex-row justify-center items-center gap-x-2 md:gap-x-4">
+      <h2 className="text-base font-bold text-gradient mb-0">{dict.title}</h2>
+      <div className="flex flex-row justify-center items-center">
         <Link href={dict.playstore.url} target="_blank">
           <Image
             src={dict.playstore.src}
