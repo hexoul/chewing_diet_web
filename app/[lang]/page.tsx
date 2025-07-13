@@ -64,7 +64,7 @@ export default async function IndexPage(props: {
       </div>
 
       <div className="text-2xl text-center my-8 md:text-3xl md:my-10 md:font-bold">
-        Just 20 chews and 15+ minutes can change the way you eat.
+        {dict.headline}
       </div>
 
       <div className="italic text-gray-500 text-center mb-6 md:text-sm md:mb-5">{`"${dict.shortDescription}"`}</div>
