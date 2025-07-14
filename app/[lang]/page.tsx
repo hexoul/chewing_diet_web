@@ -52,7 +52,9 @@ export default async function IndexPage(props: {
         <LocaleSwitcher />
       </div>
 
-      <h1 className="text-center mt-14 mb-4 whitespace-pre-line">{dict.headline}</h1>
+      <h1 className="text-center mt-14 mb-4 whitespace-pre-line">
+        {dict.headline}
+      </h1>
       <div className="italic text-gray-500 mb-8 md:text-sm">{`"${dict.shortDescription}"`}</div>
 
       <h2 className="text-base font-bold text-gradient mb-0">{dict.title}</h2>
@@ -106,7 +108,7 @@ export default async function IndexPage(props: {
         </Card>
 
         <div className="w-full justify-start items-start">
-          <h2>🛠️ {dict.keyFeatures}</h2>
+          <h2>{dict.keyFeatures}</h2>
           <ul className="text-base space-y-2">
             {dict.features.map((v, idx) => (
               <li key={`feature${idx}`}>{v}</li>
@@ -115,11 +117,16 @@ export default async function IndexPage(props: {
         </div>
       </div>
 
-      <div className="text-center text-sm mt-14 mb-4 whitespace-pre-line">
+      <div className="flex flex-col w-full md:w-2xl items-start mt-10">
+        <h2>{dict.howItWorks.title}</h2>
+        <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
+      </div>
+
+      <div className="text-center text-sm mt-16 mb-4 whitespace-pre-line">
         {dict.encourage}
       </div>
 
-      <div className="flex mb-14">
+      <div className="flex mb-16">
         <Link href="https://coff.ee/chewing.diet" target="_blank">
           <Image
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
@@ -129,11 +136,6 @@ export default async function IndexPage(props: {
             alt="Buy Me A Coffee"
           />
         </Link>
-      </div>
-
-      <div className="flex flex-col w-full md:w-2xl items-start mb-14">
-        <h2>{dict.howItWorks.title}</h2>
-        <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>
 
       <div className="flex flex-col w-full md:w-2xl items-start">
