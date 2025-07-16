@@ -22,19 +22,39 @@ const REVIEWS = [
   },
   {
     review:
-      "Much better, amazing 😍. It definitely what i am looking for and easy to use. The main of it is what I need. So thank you",
-    reviewer: "hollie dixon",
+      "I love this app, it's helped slow down my pace when eating! I also find myself drinking more water and hearing my hunger ques when I use this app. The app is great for people who want to eat slower :)",
+    reviewer: "Ashley Arellano",
+  },
+  { review: "It’s a really good app and it’s cute", reviewer: "jajendne" },
+  {
+    review:
+      "Actually I loved this application. This is really helpful to get a good habit of chewing.",
+    reviewer: "Sanket warkhandkar",
   },
   {
     review:
-      "I love this app, it's helped slow down my pace when eating! I also find myself drinking more water and hearing my hunger ques when I use this app. The app is great for people who want to eat slower :)",
-    reviewer: "Ashley Arellano",
+      "I have used this app religiously. I am preparing for bariatric surgery. This has taught me to slow down. Also, recommend this to many people!",
+    reviewer: "Shelly",
+  },
+  {
+    review:
+      "Love this! It makes me more conscious about how fast I eat, because I always eat too fast. This app really helps with slowing down and relaxing. It also helps with my bloating and actually feeling better because if I eat too fast, I can quickly get a stomach ache. This is perfect!",
+    reviewer: "eepyweepy 77",
+  },
+  {
+    review:
+      "Much better, amazing 😍. It definitely what i am looking for and easy to use. The main of it is what I need. So thank you",
+    reviewer: "hollie dixon",
   },
   {
     review: "The app itself is beautifully designed and very helpful!",
     reviewer: "Tom Tom",
   },
-  { review: "It’s a really good app and it’s cute", reviewer: "jajendne" },
+  {
+    review:
+      "I knew the importance of eating slowly and that I had been eating quite quickly, but I had never practiced it. I decided to improve my eating habits with the help of my body and mind skills! I was very surprised at the significant difference in feeling full even though I ate the same amount as usual ;)",
+    reviewer: "티아렐린 (라카노트)",
+  },
 ];
 
 export default function UserReview() {
