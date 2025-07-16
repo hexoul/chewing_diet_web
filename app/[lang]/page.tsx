@@ -2,44 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../../components/ui/carousel";
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
 import LocaleSwitcher from "./components/locale-switcher";
-
-const REVIEWS = [
-  {
-    review:
-      "Love the concept! As someone who is a fast eater, I really enjoyed using this timer app to help me regulate how fast I eat. I also love the science behind how eating slower can help me. I hope that I will see more updates with better translation and better instructions! Being able to change the chewing timer face is a bonus!",
-    reviewer: "Elizabeth “EJ” R",
-  },
-  {
-    review:
-      "Very simple but effective app, for those who eat too quickly or can't do it without some monitoring to keep them in line. It's really very useful, thank you very much.",
-    reviewer: "Gerga Chan",
-  },
-  {
-    review:
-      "Much better, amazing 😍. It definitely what i am looking for and easy to use. The main of it is what I need. So thank you",
-    reviewer: "hollie dixon",
-  },
-  {
-    review:
-      "I love this app, it's helped slow down my pace when eating! I also find myself drinking more water and hearing my hunger ques when I use this app. The app is great for people who want to eat slower :)",
-    reviewer: "Ashley Arellano",
-  },
-  {
-    review: "The app itself is beautifully designed and very helpful!",
-    reviewer: "Tom Tom",
-  },
-  { review: "It’s a really good app and it’s cute", reviewer: "jajendne" },
-];
+import UserReview from "./components/user-review";
 
 const REFERENCES = [
   {
@@ -157,34 +123,9 @@ export default async function IndexPage(props: {
         <div className="whitespace-pre-line">{dict.howItWorks.content}</div>
       </div>
 
-      <Carousel
-        className="w-full max-w-2xs md:max-w-xl mt-6"
-        opts={{ align: "start" }}
-      >
-        <CarouselContent>
-          {REVIEWS.map((v, idx) => (
-            <CarouselItem
-              key={`review${idx}`}
-              className="basis-3/4 md:basis-1/3 py-1 pr-1 hover:-translate-y-1 transform transition duration-300"
-            >
-              <Card className="bg-orange-50 border-orange-200 h-60">
-                <CardContent className="flex flex-col aspect-square justify-between gap-y-4 pb-4 md:pb-0">
-                  <div className="text-sm md:text-xs text-gray-700 break-words line-clamp-5">
-                    {v.review}
-                  </div>
-                  <div className="w-full text-gray-500 text-xs text-right">
-                    {v.reviewer}
-                  </div>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <UserReview />
 
-      <div className="flex flex-col items-center mt-8 mb-16 gap-y-4">
+      <div className="flex flex-col items-center mt-10 mb-16 gap-y-4">
         <div className="text-center text-sm whitespace-pre-line">
           {dict.encourage}
         </div>
